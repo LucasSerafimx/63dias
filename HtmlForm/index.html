@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+</head>
+<body>
+  <form action="">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    <br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="email@gmail.com" required>
+    <br><br>
+
+    <label for="password">Senha:</label>
+    <input type="password" name="password" id="password">
+    <br><br>
+
+    <label for="number">Numero:</label>
+    <!-- Deixa um limite de caracter maxlength="10" -->
+    <input type="number" name="number" id="number" maxlength="10">
+    <br><br>
+
+    <label for="file">Selecione arquivo:</label>
+    <!-- Multiple aceita varios arquivos -->
+    <!-- Aceita somente arquivos de imagens -->
+    <input type="file" name="file" id="file" multiple accept="images, .mp4">
+    <br><br>
+
+    <label for="range">Range:</label>
+    <input type="range" name="range" id="range" min="10" max="20">
+    <br><br>
+
+    <label for="color">color:</label>
+    <input type="color" name="color" id="color">
+    <br><br>
+
+    <label for="checkbox">checkbox:</label>
+    <input type="checkbox" name="checkbox" id="checkbox">
+    <br><br>
+
+    <!-- Check box respeita o name -->
+    <label for="radio">Carro:</label>
+    <input type="radio" name="radio" id="radio">
+    <br><br>
+    <label for="radio">Moto:</label>
+    <input type="radio" name="radio" id="radio">
+    <br><br>
+
+    <textarea name="texto" id="texto">    </textarea>
+    <br><br>
+
+    <select name="carrro" id="carro">
+      <option value="">Selecione</option>
+      <option value="">fiat</option>
+    </select>
+    <br><br>
+
+    <fieldset>
+      <legend>Contato</legend>
+
+      <input type="text" name="text" id="text">
+      <input type="email">
+      <input type="button" value="submit">
+    </fieldset>
+    <br><br>
+
+
+
+    <!-- Limpa os dados apos clicar -->
+    <button type="reset">Submit</button>
+
+    <!-- Mostra os dados enviados -->
+    <button type="submit">Submit</button>
+
+    <!-- Disabilita o botão -->
+    <button disabled>Submit</button>
+  </form>
+</body>
+</html>
